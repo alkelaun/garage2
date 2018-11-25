@@ -1,0 +1,39 @@
+{% extends "door/door_base.html" %}
+
+{% block title %}
+    Door
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% endblock head %}
+
+{% block main %}
+
+  <div class="container-fluid h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+
+
+      <div class="col-md-4 col-xs-12">
+
+        <form action="" method="post">
+          {% csrf_token %}
+          <input class="button btn-primary btn-lg align-center btn-block" type="submit" value="Push Garage Door">
+
+        </form>
+      <br>
+        {% if messages %}
+                {% for message in messages %}
+                <div {% if message.tags %} class="button btn-{{ message.tags }} btn-block btn-lg align-center text-center"{% endif %}>{{ message }}</div>
+                  <br>
+                {% endfor %}
+
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+
+{% endblock main %}
