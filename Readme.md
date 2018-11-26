@@ -4,4 +4,4 @@
 ## Purpose:
 Open or close my garage door by clicking on a website.
 
-!(Garage Door.jpeg)
+![Picture](Garage Door.jpeg)
