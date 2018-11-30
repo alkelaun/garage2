@@ -23,4 +23,11 @@ Three smaller projects are intertwined in this project.
 3. Use a python script/CherryPy server to control the raspberry pi. `garage.py`
 (This is how the django site interacts with the raspberry pi. It's definitely insecure.)
 
+### Door Position Sensor
+
+#### Design
+1. Zigbee tilt sensor. https://www.amazon.com/gp/product/B00WTDV1TU/
+2. Almond+ router (Zigbee controller)
+3. Websocket communication between controller and django application.
+
 
