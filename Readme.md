@@ -4,7 +4,7 @@
 ## Purpose:
 Open or close my garage door by clicking on a website.
 
-!(https://github.com/alkelaun/garage2/blob/master/raspberrypi/garagedoor.jpg)
+![full archictecture](https://github.com/alkelaun/garage2/blob/master/raspberrypi/garagedoor.jpg)
 
 ## Architecture:
 Three smaller projects are intertwined in this project.
