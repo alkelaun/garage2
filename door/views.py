@@ -30,6 +30,7 @@ class DoorClass(View):
             messages.error(request, 'Door Failed to Trigger')
         return redirect('/door')
 
+#The next two are attempts to proxy a ip camera.  The TextProxyView works, the first one is in progress.
 class ViewClass(View):
 
     template_name = 'door/door_view.html'
